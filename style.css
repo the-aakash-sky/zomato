@@ -1,0 +1,65 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@300&display=swap');
+
+body{
+    font-family: 'Merriweather';
+    background-color: #f9fafc;
+}
+
+.navbar{
+    display: flex;
+    align-items: center;
+    justify-content:space-around;
+    background-color: white;
+
+}
+
+.navbar_brand{
+    width: 100px;
+}
+.navbar_logo{
+    width: 100%;
+}
+
+.nav_item{
+    background: linear-gradient(90deg, var(--c1, #ff512f) 0%, var(--c2, #dd2476) 51%, var(--c1, #ff512f) 100%) var(--x, 0)/ 200%;
+    color: #fff;
+    border: none;
+    padding: 12px;
+    border-radius:6px;
+    font-weight: 600;
+    
+    
+}
+
+.nav_item:hover{--x:100%;
+    transition: 0.5s;
+    --c1:  #ff512f;
+    --c2: #dd2476;
+    --c1:  #ff512f;
+
+}
+    
+
+
+
+@media (min-width: 768px){
+    .navbar{
+        justify-content: space-between;
+        padding: 10px 30px;
+    }
+}
+
+@media (min-width: 1024px){
+    .navbar_brand{
+        width:150px
+    }
+    .nav_item{
+        padding: 20px;
+        font-size: 20px;
+    }
+}
